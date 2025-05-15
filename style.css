@@ -42,14 +42,17 @@ h3 {
 }
 
 .btn {
-  background-color: #9f68e0;
+  background-color: purple;
   color: #fff;
-  border: 0;
-  border-radius: 10px;
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1), 0 6px 6px rgba(0, 0, 0, 0.1);
-  padding: 14px 40px;
-  font-size: 16px;
-  cursor: pointer;
+  border: 1px purple solid;
+  border-radius: 1rem;
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  padding: 20px 30px;
+  overflow: hidden;
+  margin: 10px 0;
+  position: relative;
 }
 
 .btn:active {
@@ -58,4 +61,21 @@ h3 {
 
 .btn:focus {
   outline: 0;
+}
+
+.btn .circle {
+  position: absolute;
+  background-color: #fff;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  transform: translate(-50%, -50%) scale(0);
+  animation: scale 0.5s ease-out;
+}
+
+@keyframes scale {
+  to {
+    transform: translate(-50%, -50%) scale(3);
+    opacity: 0;
+  }
 }
