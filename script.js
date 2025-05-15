@@ -56,9 +56,9 @@ document.addEventListener("DOMContentLoaded", () => {
     e.currentTarget.appendChild(circle);
 
     /*  
-If the circle stays in the DOM after the animation:
-A new one is added every time you click, and the old ones pile up.
-This can decrease performance and also mess up the visual appearance.
+    If the circle stays in the DOM after the animation:
+   A new one is added every time you click, and the old ones pile up.
+   This can decrease performance and also mess up the visual appearance.
  */
     setTimeout(() => {
       circle.remove();
